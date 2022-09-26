@@ -1,2 +1,2 @@
-# ignore != c files
-!*.c
+# ignore bin folder (exec files)
+bin/
