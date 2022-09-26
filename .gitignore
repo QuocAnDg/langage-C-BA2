@@ -1,2 +1,2 @@
-# ignorer les fichiers non c
+# ignore != c files
 !*.c
