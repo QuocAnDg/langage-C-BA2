@@ -1,0 +1,45 @@
+réponse :
+
+1
+1
+adresse de x
+adresse de l'élément 0 du tableau statique t[4]
+t : 3 4
+
+2
+1
+adresse de x
+adresse de l'élément 0 du tableau statique t[4]
+t : 3 4
+
+2
+1
+adresse de x 
+adresse à l'élement 1 maintenant (+1 position) 
+t : 3 4
+
+2
+1
+adresse de x
+adresse  à l'elem 1 du tab t[4]
+t : 3 2
+
+2 
+1
+adresse de x + 2 + 2 (ptr1 n'est plus référencer vers la valeur x mais une autre adresse) 
+adr à l'el 1
+t : 3 2
+
+2
+1
+nouvelle adresse
+adresse de l'el 1
+t : 3 2
+
+2
+1
+adresse ptr1
+adr de l'el 1
+t : 3 2
+
+
