@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<stdlib.h>
 #define CASE_ROND 'O'
-#define CASE_CROIX 'X'
+#defiwne CASE_CROIX 'X'
 #define CASE_VIDE '.'
 int main()
 {
@@ -43,7 +43,7 @@ int main()
 
             for (int i = 0; i < H; i++) {
                 for (int j = L; j < input; j++) {
-                    m[i][j] = '.';
+                    m[i][j] = CASE_VIDE;
                 }
             }
             L = input;
