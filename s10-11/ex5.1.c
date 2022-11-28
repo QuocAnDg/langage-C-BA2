@@ -1,14 +1,24 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include <assert.h>
 #define TAILLE 256
+void impTable (char ** t, int sz);
+void impTable (char ** t, int sz){
+    for (int i = 1; i < sz; i++) {
+        assert(strlen(t[i]) != 0);
+    }
+    for (int i = 1; i < sz; i++) {
+        printf("%d) %s\n",i,t[i]);
+    }
+}
+
 int main(int argc, char *argv[])
 {
+    
     char ligne[TAILLE];
     int nonTrouves = 0;
-    for (int i = 1; i < argc; i++) {
-        printf("%d) %s\n",i,argv[i]);
-    }
+   impTable(argv,argc);
     while (fgets(ligne, TAILLE, stdin) != NULL){
         if (strlen(ligne) > 27){
             fflush(stdin);
@@ -35,6 +45,5 @@ int main(int argc, char *argv[])
         }
     }
     printf("mots non trouvés : %d", nonTrouves);
-
     return 0;
 }
